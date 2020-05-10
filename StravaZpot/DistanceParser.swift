@@ -12,7 +12,7 @@ import SwiftyJSON
 public class DistanceParser : Parser {
     
     public func from(json : JSON) -> Distance {
-        return Distance(meters : json.double!)
+        return Distance(meters : json.double ?? 0)
     }
 
 }

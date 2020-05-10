@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class TemperatureParser : Parser {
     public func from(json: JSON) -> Temperature {
-        return Temperature(celsiusDegrees: json.double!)
+        return Temperature(celsiusDegrees: json.double ?? 0)
     }
 }

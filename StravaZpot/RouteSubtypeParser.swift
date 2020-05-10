@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class RouteSubtypeParser : Parser {
     public func from(json: JSON) -> RouteSubtype {
-        return RouteSubtype(rawValue: json.int!)!
+        return RouteSubtype(rawValue: json.int ?? 1)!
     }
 }

@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class TimeParser : Parser {
     public func from(json: JSON) -> Time {
-        return Time(seconds: json.int!)
+        return Time(seconds: json.int ?? 0)
     }
 }

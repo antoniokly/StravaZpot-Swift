@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class DateParser : Parser {
     public func from(json: JSON) -> Date {
-        let dateString = json.string!
+        let dateString = json.string ?? "1990-01-01T00:00:00Z"
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         return dateFormatter.date(from: dateString)!

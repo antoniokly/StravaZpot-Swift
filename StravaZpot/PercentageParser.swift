@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class PercentageParser : Parser {
     public func from(json: JSON) -> Percentage {
-        return Percentage(percent: json.double!)
+        return Percentage(percent: json.double ?? 0)
     }
 }

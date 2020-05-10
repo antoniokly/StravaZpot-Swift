@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class WorkoutTypeParser : Parser {
     public func from(json: JSON) -> WorkoutType {
-        return WorkoutType(rawValue: json.int!)!
+        return WorkoutType(rawValue: json.int ?? 0)!
     }
 }

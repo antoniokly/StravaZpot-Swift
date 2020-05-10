@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class SportTypeParser : Parser {
     public func from(json: JSON) -> SportType {
-        return SportType(rawValue: json.string!)!
+        return SportType(rawValue: json.string ?? "") ?? .cycling
     }
 }

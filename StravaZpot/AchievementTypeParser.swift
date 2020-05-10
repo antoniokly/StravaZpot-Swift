@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class AchievementTypeParser : Parser {
     public func from(json: JSON) -> AchievementType {
-        return AchievementType(rawValue: json.int!)!
+        return AchievementType(rawValue: json.int ?? 2)!
     }
 }

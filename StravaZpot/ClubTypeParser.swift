@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class ClubTypeParser : Parser {
     public func from(json: JSON) -> ClubType {
-        return ClubType(rawValue: json.string!)!
+        return ClubType(rawValue: json.string ?? "casual_club")!
     }
 }

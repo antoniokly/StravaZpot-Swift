@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class MeasurementPreferenceParser : Parser {
     public func from(json: JSON) -> MeasurementPreference {
-        return MeasurementPreference(rawValue: json.string!)!
+        return MeasurementPreference(rawValue: json.string ?? "meters")!
     }
 }

@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class StreamTypeParser : Parser {
     public func from(json: JSON) -> StreamType {
-        return StreamType(rawValue: json.string!)!
+        return StreamType(rawValue: json.string ?? "") ?? .time
     }
 }

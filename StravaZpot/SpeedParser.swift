@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class SpeedParser : Parser {
     public func from(json: JSON) -> Speed {
-        return Speed(metersPerSecond: json.double!)
+        return Speed(metersPerSecond: json.double ?? 0)
     }
 }

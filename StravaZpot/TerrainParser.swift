@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class TerrainParser : Parser {
     public func from(json: JSON) -> Terrain {
-        return Terrain(rawValue: json.int!)!
+        return Terrain(rawValue: json.int ?? 0)!
     }
 }

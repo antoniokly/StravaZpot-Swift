@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftyJSON
-//import Alamofire
+import Alamofire
 
 public class AlamofireHTTPClient : HTTPClient {
     private let baseURL : String
@@ -45,14 +45,14 @@ public class AlamofireHTTPClient : HTTPClient {
         request(url: url, method: .delete, parameters: parameters, callback: callback)
     }
     
-    private func responseCallback(_ response : DataResponse<Any>, _ callback : (StravaResult<JSON>) -> ()) -> () {
+    private func responseCallback(_ response : DataResponse<Any, AFError>, _ callback : (StravaResult<JSON>) -> ()) -> () {
         if(self.debug) {
             debugPrint(response)
         }
         
-        if let result = response.result.value {
-            callback(.success(JSON(result)))
-        } else {
+        do {
+            callback(.success(JSON(try response.result.get())))
+        } catch {
             if response.response?.statusCode == 401 {
                 callback(.error(.unauthorized(message: "Unauthorized access. Request a new token.")))
             } else {
@@ -63,7 +63,7 @@ public class AlamofireHTTPClient : HTTPClient {
     
     private func request(url : String, method: HTTPMethod, parameters : [String : Any], callback : @escaping (StravaResult<JSON>) -> ()) {
         
-        Alamofire.request(baseURL + url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
+        AF.request(baseURL + url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200 ..< 300)
             .responseJSON { response in
                 self.responseCallback(response, callback)
@@ -71,22 +71,23 @@ public class AlamofireHTTPClient : HTTPClient {
     }
     
     public func upload(file : URL, withKey key : String, withName name : String, toUrl url : String, parameters : [String : Data], mimeType : String = "multipart/form-data", callback : @escaping (StravaResult<JSON>) -> ()) {
-        Alamofire.upload(multipartFormData: { multipartFormData in
+        
+        let upload = AF.upload(multipartFormData: { multipartFormData in
             parameters.forEach{ key, value in
                 multipartFormData.append(value, withName: key)
             }
             multipartFormData.append(file, withName: key, fileName: name, mimeType: mimeType)
-        }, to: baseURL + url, method: .post, headers: headers, encodingCompletion: { encodingResult in
-            switch encodingResult {
-            case .success(let upload, _, _):
-                upload.validate(statusCode: 200 ..< 300)
-                    .responseJSON { response in
-                        self.responseCallback(response, callback)
+        }, to: baseURL + url, method: .post, headers: headers )
+
+        upload.response { (response) in
+            switch response.result {
+            case .success(_):
+                upload.validate(statusCode: 200 ..< 300).responseJSON { response in
+                    self.responseCallback(response, callback)
                 }
             case .failure(let encodingError):
                 callback(.error(.apiError(message: "Strava API Error: \(encodingError)")))
             }
         }
-        )
     }
 }

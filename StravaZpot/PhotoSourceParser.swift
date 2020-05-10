@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class PhotoSourceParser : Parser {
     public func from(json: JSON) -> PhotoSource {
-        return PhotoSource(rawValue: json.int!)!
+        return PhotoSource(rawValue: json.int ?? 0) ?? .strava
     }
 }

@@ -11,6 +11,6 @@ import SwiftyJSON
 
 public class ResolutionParser : Parser {
     public func from(json: JSON) -> Resolution {
-        return Resolution(rawValue: json.string!)!
+        return Resolution(rawValue: json.string ?? "") ?? .high
     }
 }
