@@ -19,6 +19,6 @@ public struct StravaConfig {
     }
     
     public func client() -> HTTPClient {
-        return AlamofireHTTPClient(baseURL: baseURL, token: token, debug: debug)
+        return DummyHttpClient()  //AlamofireHTTPClient(baseURL: baseURL, token: token, debug: debug)
     }
 }

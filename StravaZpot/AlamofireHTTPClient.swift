@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftyJSON
-import Alamofire
+//import Alamofire
 
 public class AlamofireHTTPClient : HTTPClient {
     private let baseURL : String

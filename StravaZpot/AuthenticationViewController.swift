@@ -28,7 +28,7 @@ public class AuthenticationViewController: UIViewController, UIWebViewDelegate {
         self.webView.delegate = self
     }
     
-    public func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    public func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
         if let loadingURL = request.mainDocumentURL,
             let code = loadingURL.valueOf(queryParameterName: "code"){
             if loadingURL.absoluteString.hasPrefix(redirectURL) {
