@@ -303,8 +303,8 @@
 		11FB66DB1DC35EBB006FF63E /* IntervalParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66DA1DC35EBB006FF63E /* IntervalParserTest.swift */; };
 		11FB66DD1DC362AB006FF63E /* PercentageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66DC1DC362AB006FF63E /* PercentageParser.swift */; };
 		11FB66DF1DC3634A006FF63E /* PercentageParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FB66DE1DC3634A006FF63E /* PercentageParserTest.swift */; };
-		6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */; };
-		792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */; };
+		17522E5A7F2D66DB6413CF42 /* libPods-StravaZpotTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F5B8BBD56FC2DBCBEE0E53 /* libPods-StravaZpotTests.a */; };
+		D84CEA60CA5D5BEB72DB189F /* libPods-StravaZpot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F4500C6A27085E9D6EEABFE /* libPods-StravaZpot.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,6 +319,7 @@
 
 /* Begin PBXFileReference section */
 		0A4E0119DD969793BE9DE80D /* Pods-StravaZpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F4500C6A27085E9D6EEABFE /* libPods-StravaZpot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StravaZpot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		110682B21DC74E6F00A08026 /* PhotoSummaryParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSummaryParserTest.swift; sourceTree = "<group>"; };
 		110682B41DC74FF100A08026 /* AthleteTypeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteTypeParser.swift; sourceTree = "<group>"; };
 		110682B61DC7503000A08026 /* AthleteTypeParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AthleteTypeParserTest.swift; sourceTree = "<group>"; };
@@ -407,10 +408,6 @@
 		112EF3471F28A21B00A1159F /* AuthenticationAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationAPITest.swift; sourceTree = "<group>"; };
 		112EF3491F28A8FA00A1159F /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		112EF34B1F28AC8E00A1159F /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
-		112EF3641F28B65600A1159F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
-		112EF3651F28B65600A1159F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble/Nimble.framework"; sourceTree = "<group>"; };
-		112EF3661F28B65600A1159F /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
-		112EF36A1F28B7BB00A1159F /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_StravaZpot.framework; path = "../../Library/Developer/Xcode/DerivedData/StravaZpot-fmbwhauilcnkdpfmwhlimidqqbab/Build/Products/Debug-iphonesimulator/Pods_StravaZpot.framework"; sourceTree = "<group>"; };
 		112EF3A11F2A028900A1159F /* ExploreResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResult.swift; sourceTree = "<group>"; };
 		112EF3A31F2A02FA00A1159F /* ExploreResultParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResultParser.swift; sourceTree = "<group>"; };
 		112EF3A51F2A037600A1159F /* ExploreResultParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreResultParserTest.swift; sourceTree = "<group>"; };
@@ -624,9 +621,8 @@
 		11FB66DC1DC362AB006FF63E /* PercentageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageParser.swift; sourceTree = "<group>"; };
 		11FB66DE1DC3634A006FF63E /* PercentageParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentageParserTest.swift; sourceTree = "<group>"; };
 		25708C10B554E9B92621AE13 /* Pods-StravaZpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.release.xcconfig"; sourceTree = "<group>"; };
-		7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F5B8BBD56FC2DBCBEE0E53 /* libPods-StravaZpotTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StravaZpotTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEE79AE5327C9C1DDB1C0E2 /* Pods-StravaZpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaZpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28A7DB7276E1105E60C91B2 /* Pods-StravaZpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaZpot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaZpot/Pods-StravaZpot.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -635,7 +631,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792EA349B3B257ED4E8E312E /* Pods_StravaZpot.framework in Frameworks */,
+				D84CEA60CA5D5BEB72DB189F /* libPods-StravaZpot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A6A94F1DBE44B4003E5302 /* StravaZpot.framework in Frameworks */,
-				6C3EE5599AFD56DFD0A066B1 /* Pods_StravaZpotTests.framework in Frameworks */,
+				17522E5A7F2D66DB6413CF42 /* libPods-StravaZpotTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,12 +1185,8 @@
 		4F71574CA2855193987F6AF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				112EF36A1F28B7BB00A1159F /* Pods_StravaZpot.framework */,
-				112EF3641F28B65600A1159F /* Alamofire.framework */,
-				112EF3651F28B65600A1159F /* Nimble.framework */,
-				112EF3661F28B65600A1159F /* SwiftyJSON.framework */,
-				7EC12BD62F199784EA34EF12 /* Pods_StravaZpot.framework */,
-				8DA106253ED279DBBFB7F6E0 /* Pods_StravaZpotTests.framework */,
+				0F4500C6A27085E9D6EEABFE /* libPods-StravaZpot.a */,
+				53F5B8BBD56FC2DBCBEE0E53 /* libPods-StravaZpotTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1240,7 +1232,6 @@
 				11A6A94A1DBE44B4003E5302 /* Sources */,
 				11A6A94B1DBE44B4003E5302 /* Frameworks */,
 				11A6A94C1DBE44B4003E5302 /* Resources */,
-				C97603E59320671125CA4A8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1264,13 +1255,11 @@
 				TargetAttributes = {
 					11A6A9441DBE44B4003E5302 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = L7RXC8SZH2;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					11A6A94D1DBE44B4003E5302 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = L7RXC8SZH2;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
@@ -1281,6 +1270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1347,28 +1337,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C97603E59320671125CA4A8C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaZpotTests/Pods-StravaZpotTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1820,13 +1788,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StravaZpot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sweetzpot.StravaZpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1845,13 +1813,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = StravaZpot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sweetzpot.StravaZpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1867,11 +1835,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StravaZpotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sweetzpot.StravaZpotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StravaZpotTests/StravaZpotTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -1885,11 +1856,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = L7RXC8SZH2;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StravaZpotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sweetzpot.StravaZpotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StravaZpotTests/StravaZpotTests-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
